@@ -11,3 +11,18 @@ Create new folder at local and right click and open git bash here.
 
 6 git push --> to add code to main/branch   
 
+
+
+---------------------------------------------------------------
+Steps to give push access to evryone
+
+1.Ask for the username of the person you're adding as a collaborator. If they don't have one, they can sign up for GitHub.
+2.In the top right corner of any page, click your username.
+3.On your profile page, click the Repositories tab, then click the name of your repository.
+4.In your repository's right sidebar, click Settings.
+5.Click the "Collaborators" tab.
+6.Start typing the collaborator's username.
+7.Select the user from the drop-down menu.
+8.Click Add team or individual member.
+
+
