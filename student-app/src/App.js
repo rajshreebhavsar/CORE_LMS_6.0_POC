@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<StudentList />} />
           <Route path="/add" element={<AddStudent />} />
-          <Route path="/edit/:id" ASDF element={<EditStudent />} />
+          <Route path="/edit/:id" ASDFPuja element={<EditStudent />} />
         </Routes>
       </div>
     </Router>
