@@ -29,7 +29,9 @@ public class MasterAgreement extends BaseEntity {
 	private String tPortfolioCode;
 	private LocalDate dtValidFrom;
 	private LocalDate dtValidTo;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fSanctionAmt;
+	@Column(columnDefinition = "NUMBER(20)")
 	private Number tCustomerNo;
 	@Column(length = 20)
 	private String tApplicationNo;

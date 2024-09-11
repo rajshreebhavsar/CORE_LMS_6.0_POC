@@ -25,7 +25,9 @@ public class BankDetails extends BaseEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long iBankId;
 
+	@Column(columnDefinition = "NUMBER(20)")
 	private Number iCustomerId;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number iSrno;
 	@Column(length = 60)
 	private String tBankCode;
@@ -34,8 +36,10 @@ public class BankDetails extends BaseEntity {
 	@Column(length = 15)
 	private String tAccountType;
 	private LocalDate dtAccountSince;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fAvgBalance;
 	private char cUseForRepaymentYn;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number iAddressSrno;
 	@Column(length = 15)
 	private String tIfscCode;

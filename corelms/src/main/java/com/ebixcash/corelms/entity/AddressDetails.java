@@ -1,12 +1,17 @@
 package com.ebixcash.corelms.entity;
 
-import com.ebixcash.corelms.entity.BaseEntity;
+import java.math.BigInteger;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import com.ebixcash.accounts.entity.BaseEntity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,7 +28,10 @@ public class AddressDetails extends BaseEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long iAddressId;
 
-	private Number iCustomerId;
+	
+
+	@Column(columnDefinition = "NUMBER(20)")
+	private Integer iCustomerId;
 	@Column(length = 30)
 	private String tCity;
 	@Column(length = 30)

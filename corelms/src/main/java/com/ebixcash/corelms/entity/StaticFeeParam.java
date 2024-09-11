@@ -26,6 +26,7 @@ public class StaticFeeParam extends BaseEntity {
 	
 	@Column(length = 20)
 	private String tLoanAccountNo;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number iSrno;
 	@Column(length = 20)
 	private String tFeeCode;
@@ -43,9 +44,13 @@ public class StaticFeeParam extends BaseEntity {
 	private String tCalcBasis;
 	@Column(length = 20)
 	private String tCalcType;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fChargesPercentage;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fChargeAmount;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fMinChargeAmount;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fMaxChargeAmount;
 	@Column(length = 20)
 	private String tRangeType;
@@ -92,5 +97,4 @@ public class StaticFeeParam extends BaseEntity {
 	private char cIgst;
 	private char cTaxComputation;
 	private char cSystemTax1;
-
 }

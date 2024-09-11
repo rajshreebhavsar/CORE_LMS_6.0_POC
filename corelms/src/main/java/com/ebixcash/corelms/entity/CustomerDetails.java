@@ -37,6 +37,7 @@ public class CustomerDetails extends BaseEntity {
 	private String tMname;
 	@Column(length = 80)
 	private String tLname;
+	@Column(columnDefinition = "NUMBER(10)")
 	private Number iAddressSeq;
 	@Column(length = 2)
 	private String tPrefAddType;
@@ -94,6 +95,7 @@ public class CustomerDetails extends BaseEntity {
 	private String tOrgBusinessTypeCode;
 	private LocalDate dtOrgRegistration;
 	private LocalDate dtOrgIncorporationDate;
+	@Column(columnDefinition = "NUMBER(33)")
 	private Number iOrgNoOfEmployees;
 	private LocalDate dtOrgOperatingSince;
 	@Column(length = 60)

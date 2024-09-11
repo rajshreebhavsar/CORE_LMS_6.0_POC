@@ -26,12 +26,18 @@ public class ScheduleVariations extends BaseEntity {
 	// @Column(name = "tLoanAccountNo", length = 200)
 	@Column(length = 20)
 	private String tLoanAccountNo;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number iSrno;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number iInstallmentFrom;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number iInstallmentTo;
+	@Column(columnDefinition = "NUMBER(1)")
 	private Number fAdjustment;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fValue;
-	private Number tVariationType;
+	@Column(length = 40)
+	private String tVariationType;
 	
 
 }

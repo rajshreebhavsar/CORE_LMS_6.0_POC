@@ -23,26 +23,32 @@ public class RangeBasisStaticFee extends BaseEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long iRangeFeeID;
 
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number iStaticFeeID;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number iSrno;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fChargeAmount;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fMinAmtPer;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fMaxAmtPer;
+	@Column(columnDefinition = "NUMBER(22)")
 	private Number fChrgePercnt;
 	@Column(length = 20)
-	private String szChargeCode;
+	private String tChargeCode;
 	@Column(length = 20)
-	private String szChargeType;
+	private String tChargeType;
 	@Column(length = 20)
-	private String szChargeBasisCode;
+	private String tChargeBasisCode;
 	@Column(length = 20)
-	private String szApplicableModule;
+	private String tApplicableModule;
 	@Column(length = 20)
-	private String szApplicableFor;
+	private String tApplicableFor;
 	private char cTaxType;
 	private char cApplicableAllYn;
 	@Column(length = 20)
-	private String szChargeBasisValuecode;
+	private String tChargeBasisValuecode;
 
 
 }
