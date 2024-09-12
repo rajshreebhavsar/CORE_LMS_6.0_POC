@@ -2,8 +2,6 @@ package com.ebixcash.corelms.entity;
 
 import java.time.LocalDate;
 
-import  com.ebixcash.corelms.entity.BaseEntity;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +17,7 @@ import lombok.ToString;
 @Setter
 @ToString
 @Table(name = "tLmsMasterAgreement")
-public class MasterAgreement extends BaseEntity {
+public class MasterAgreement extends BaseEntity{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
